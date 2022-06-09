@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foormulario De Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+
+</head>
+
+
+<body>
+
+
+    <form class="modal-content animate" action="index.html" method="post"></form>
+    <div class="contact_form">
+        <h5>FORMULARIO DE CONTACTO</H5>
+        <H6>ESCRIBENOS Y EN BREVE NOS PONDREMOS EN CONTACTO CONTIGO</H6>
+
+        <form action="submeter-formulario.php" method="post">
+            <P>
+                <lebel fro="RUT" class="colocar_rut">RUT
+                    <span class="obligatorio">*</span>
+                </lebel>
+                <input type="text" name="introducir_rut" id="rut" required="obligatorio" placeholder="Escribe tu rut">
+
+            </P>
+
+            <P>
+                <lebel fro="NOMBRE" class="colocar_nombre">NOMBRE
+                    <span class="obligatorio">*</span>
+                </lebel>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+
+            </P>
+
+            <P>
+                <lebel fro="Apellidos" class="colocar_Apellidos">APELLIDOS
+                    <span class="obligatorio">*</span>
+                </lebel>
+                <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
+
+            </P>
+
+            <P>
+                <lebel fro="E-mail" class="colocar_E-mail">E-mail
+                    <span class="obligatorio">*</span>
+                </lebel>
+                <input type="text" name="introducir_E-mail" id="E-mail" required="obligatorio" placeholder="Escribe tus E-mail">
+
+            </P>
+
+            <P>
+                <lebel fro="TELÉFONO" class="colocar_TELÉFONO">TELÉFONO
+                    <span class="obligatorio">*</span>
+                </lebel>
+                <input type="text" name="introducir_TELÉFONO" id="TELÉFONO" required="obligatorio" placeholder="Escribe tus TELÉFONO">
+
+            </P>
+            <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+            </p>
+
+            <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                  <span class="obligatorio">*</span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+
+
+        </form>
+</body>
+
+</html>
